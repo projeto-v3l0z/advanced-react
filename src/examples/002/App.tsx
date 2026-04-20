@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 
 const MovingBlock = ({ position }: { position: number }) => (
   <Badge
-    className="fixed left-[27rem] w-12 h-4" style={{ top: position }}>
+    className="fixed left-108 w-12 h-4" style={{ top: position }}>
     {position}
   </Badge>
 );
@@ -28,7 +28,7 @@ export const App = () => {
   return (
     <main className="container mx-auto">
       <div
-        className="w-[30rem] h-[10rem] border border-gray-500/50 z-[1] overflow-auto"
+        className="w-120 h-40 border border-gray-500/50 z-1 overflow-auto"
         onScroll={onScroll}
       >
         {/* passa o valor da posição para o novo componente movable */}
